@@ -1,0 +1,10 @@
+nav li {
+  list-style: none;
+}
+nav li a:hover {
+  color: coral;
+}
+nav li a {
+  color: white;
+  text-decoration: none;
+}
