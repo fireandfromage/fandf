@@ -5,7 +5,6 @@ export default class Nav extends Component {
   render() {
     return (
       <nav>
-        <p>main nav placeholder</p>
         <Link to="/">Home</Link>
         <Link to="/about">About Us</Link>
         <Link to="/catering">Catering</Link>
