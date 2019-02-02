@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class Catering extends Component {
   render() {
     return (
-      <section id="catering" style={{paddingTop:'120px'}}>
+      <div id="catering">
         <h1>Raclette Caterer in Provo, UT.</h1>
 
         <p>
@@ -27,7 +27,7 @@ export default class Catering extends Component {
         </p>
 
         <p>Call us today for your custom quote!</p>
-      </section>
+      </div>
     );
   }
 }

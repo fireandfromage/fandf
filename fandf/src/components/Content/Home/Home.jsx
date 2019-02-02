@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-export default class extends Component {
+export default class Home extends Component {
   render() {
     return (
-      <section id="home" style={{ paddingTop: "120px" }}>
+      <div id="home">
         <h1>Raclette, The Swiss Tradition</h1>
         <p>
           Raclette is a traditional dish of cheese melted on the wheel or block,
@@ -26,7 +26,7 @@ export default class extends Component {
         </p>
 
         <p>Give us a call to set up your event today!</p>
-      </section>
+      </div>
     );
   }
 }

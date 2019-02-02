@@ -3,14 +3,13 @@ import React, { Component } from "react";
 export default class About extends Component {
   render() {
     return (
-      <section id="about" style={{paddingTop:'120px'}}>
+      <div id="about">
         <h1>The King Of Cheese</h1>
 
-        <p>Chef Degen Reinhardt Storrer</p>
-
         <p>
-          Started Fire and Fromage in 2018. His vision is to build his career
-          entirely focused on the lovely sectionerse product known as cheese.
+          Chef Degen Reinhardt Storrer started Fire and Fromage in 2018. His
+          vision is to build his career entirely focused on the lovely
+          sectionerse product known as cheese.
         </p>
 
         <p>
@@ -40,7 +39,7 @@ export default class About extends Component {
           Raclette being the king of all cheese dishes, seemed to be a natural
           choice!
         </p>
-      </section>
+      </div>
     );
   }
 }

@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
-import Content from "./components/Content/Content";
-import Nav from "./components/Nav/Nav";
+import Content from "./components/Content";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 import "./App.css";
 
@@ -12,8 +14,10 @@ class App extends Component {
       <Router>
         <div id="outer-container" className="App">
           <Nav />
-          <div id="page-wrap">
+          <div className="site" id="page-wrap">
+            <Header />
             <Content />
+            <Footer />
           </div>
         </div>
       </Router>

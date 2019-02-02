@@ -7,10 +7,10 @@ import "./nav.css";
 const styles = {
   bmBurgerButton: {
     position: "fixed",
-    width: "36px",
-    height: "30px",
-    right: "36px",
-    top: "36px"
+    width: "26px",
+    height: "20px",
+    right: "20px",
+    top: "26px"
   },
   bmBurgerBars: {
     background: "#373a47",
@@ -26,7 +26,7 @@ const styles = {
   bmMenu: {
     background: "#373a47",
     padding: "2.5em 1.5em 0",
-    fontSize: "1.15em"
+    fontSize: "1.2em"
   },
   bmMorphShape: {
     fill: "#373a47"
@@ -36,7 +36,9 @@ const styles = {
     padding: "0.8em"
   },
   bmItem: {
-    display: "inline-block"
+    display: "inline-block",
+    fontFamily: "Raleway",
+    padding: ".7rem 0"
   },
   bmOverlay: {
     background: "rgba(0, 0, 0, 0.3)"
