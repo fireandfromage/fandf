@@ -46,13 +46,32 @@ const styles = {
 };
 
 export default class Nav extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isOpen: false
+    };
+  }
+
+  closeMenu() {
+    this.setState({ menuOpen: false });
+  }
+
   showSettings(event) {
     event.preventDefault();
   }
 
+  toggleMenu() {
+    this.setState({ menuOpen: !this.state.menuOpen });
+  }
+
   render() {
+    const { closeMenu } = this.props;
+
     return (
       <Menu
+        isOpen={this.state.menuOpen}
         pageWrapId={"page-wrap"}
         outerContainerId={"outer-container"}
         styles={styles}
@@ -61,19 +80,29 @@ export default class Nav extends Component {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link onClick={() => closeMenu()} to="/">
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/about">About Us</Link>
+              <Link onClick={() => closeMenu()} to="/about">
+                About Us
+              </Link>
             </li>
             <li>
-              <Link to="/catering">Catering</Link>
+              <Link onClick={() => closeMenu()} to="/catering">
+                Catering
+              </Link>
             </li>
             <li>
-              <Link to="/booth">Food Booth</Link>
+              <Link onClick={() => closeMenu()} to="/booth">
+                Food Booth
+              </Link>
             </li>
             <li>
-              <Link to="/contact">Contact Us</Link>
+              <Link onClick={() => closeMenu()} to="/contact">
+                Contact Us
+              </Link>
             </li>
           </ul>
         </nav>
