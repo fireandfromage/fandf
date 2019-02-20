@@ -50,7 +50,7 @@ export default class Nav extends Component {
     super(props);
 
     this.state = {
-      isOpen: false
+      menuOpen: false
     };
   }
 
@@ -70,43 +70,50 @@ export default class Nav extends Component {
     const { closeMenu } = this.props;
 
     return (
-      <Menu
-        isOpen={this.state.menuOpen}
-        pageWrapId={"page-wrap"}
-        outerContainerId={"outer-container"}
-        styles={styles}
-        right
+      <div
+        tabIndex="0"
+        role="button"
+        onClick={() => this.toggleMenu()}
+        onKeyPress={() => this.toggleMenu()}
       >
-        <nav>
-          <ul>
-            <li>
-              <Link onClick={() => closeMenu()} to="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link onClick={() => closeMenu()} to="/about">
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link onClick={() => closeMenu()} to="/catering">
-                Catering
-              </Link>
-            </li>
-            <li>
-              <Link onClick={() => closeMenu()} to="/booth">
-                Food Booth
-              </Link>
-            </li>
-            <li>
-              <Link onClick={() => closeMenu()} to="/contact">
-                Contact Us
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </Menu>
+        <Menu
+          isOpen={this.state.menuOpen}
+          pageWrapId={"page-wrap"}
+          outerContainerId={"outer-container"}
+          styles={styles}
+          right
+        >
+          <nav>
+            <ul>
+              <li>
+                <Link onClick={() => closeMenu()} to="/">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link onClick={() => closeMenu()} to="/about">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link onClick={() => closeMenu()} to="/catering">
+                  Catering
+                </Link>
+              </li>
+              <li>
+                <Link onClick={() => closeMenu()} to="/booth">
+                  Food Booth
+                </Link>
+              </li>
+              <li>
+                <Link onClick={() => closeMenu()} to="/contact">
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </Menu>
+      </div>
     );
   }
 }
