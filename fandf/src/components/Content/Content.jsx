@@ -11,6 +11,34 @@ import NoMatch from "./NoMatch";
 import "./content.scss";
 
 export default class Content extends Component {
+  componentDidMount() {
+    const { history } = this.props;
+
+    history.listen(() => {
+      this.updatePageTitle();
+    });
+  }
+
+  shouldComponentUpdate(nextProps) {
+    return this.props.location.pathname !== nextProps.location.pathname
+      ? true
+      : false;
+  }
+
+  updatePageTitle() {
+    const { history, links, title, subtitle } = this.props;
+
+    let changeTitle = "";
+
+    links.forEach(entry => {
+      if (history.location.pathname === entry.link) {
+        changeTitle = entry.label;
+      }
+    });
+
+    document.title = changeTitle ? `${title} - ${changeTitle}` : subtitle;
+  }
+
   render() {
     return (
       <main className="content">

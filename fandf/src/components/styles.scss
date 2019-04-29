@@ -1,1 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=ABeeZee|Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Raleway|Playfair+Display:400i,700");
+
+/*-----------------------------------------
+If it's good enough for mobile it's good enough for old browsers that aren't up to spec (that don't support grid)
+-----------------------------------------*/
+@media screen and (min-width: 800px) {
+  @supports not (display: grid) {
+    .content,
+    .sidebar {
+      max-width: 50em;
+      margin: 0 auto;
+    }
+  }
+}
+
+/*-----------------------------------------
+Wider screens and the browser supports
+-----------------------------------------*/
