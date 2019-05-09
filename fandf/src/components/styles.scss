@@ -1,9 +1,53 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway|Playfair+Display:400i,700");
 
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+}
+
+header {
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 25px;
+  padding: 5px 0 15px;
+}
+p {
+  padding: 10px 0;
+}
+
+.content,
+.sidebar {
+  flex: 1 0 auto;
+  padding: 20px;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
 /*-----------------------------------------
 If it's good enough for mobile it's good enough for old browsers that aren't up to spec (that don't support grid)
 -----------------------------------------*/
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
   @supports not (display: grid) {
     .content,
     .sidebar {
@@ -14,5 +58,57 @@ If it's good enough for mobile it's good enough for old browsers that aren't up 
 }
 
 /*-----------------------------------------
-Wider screens and the browser supports
+Wider screens and the browser supports it
 -----------------------------------------*/
+
+@media screen and (min-width: 800px) {
+  @supports (display: grid) {
+    .site {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto 1fr;
+      grid-template-areas:
+        "header header header"
+        "content content sidebar"
+        "footer footer footer";
+    }
+    header {
+      grid-area: header;
+    }
+    main {
+      grid-area: content;
+    }
+    aside.sidebar {
+      grid-area: sidebar;
+    }
+    footer {
+      grid-area: footer;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  @supports (display: grid) {
+    .site {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr 1fr;
+      grid-template-rows: auto 1fr;
+      grid-template-areas:
+        "header header header header"
+        "peace content sidebar peace"
+        "footer footer footer footer";
+    }
+    header {
+      grid-area: header;
+    }
+    main {
+      grid-area: content;
+    }
+    aside.sidebar {
+      grid-area: sidebar;
+    }
+    footer {
+      grid-area: footer;
+    }
+  }
+}

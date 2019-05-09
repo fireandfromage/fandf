@@ -33,6 +33,7 @@ const styles = {
   },
   bmItemList: {
     color: "#b8b7ad",
+    height: "90%",
     padding: "0.8em"
   },
   bmItem: {
