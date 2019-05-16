@@ -6,7 +6,7 @@ export default class Footer extends Component {
   render() {
     return (
       <footer>
-        <h4>Fire and Fromage</h4>
+        <h4>&copy; Fire and Fromage</h4>
       </footer>
     );
   }
