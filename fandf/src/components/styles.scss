@@ -61,54 +61,51 @@ If it's good enough for mobile it's good enough for old browsers that aren't up 
 Wider screens and the browser supports it
 -----------------------------------------*/
 
-@media screen and (min-width: 800px) {
-  @supports (display: grid) {
+@supports (display: grid) {
+  .site {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "content"
+      "sidebar"
+      "footer";
+  }
+
+  @media screen and (min-width: 800px) {
     .site {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: auto 1fr;
       grid-template-areas:
-        "header header header"
-        "content content sidebar"
-        "footer footer footer";
-    }
-    header {
-      grid-area: header;
-    }
-    main {
-      grid-area: content;
-    }
-    aside.sidebar {
-      grid-area: sidebar;
-    }
-    footer {
-      grid-area: footer;
+        "header header"
+        "content sidebar"
+        "footer footer";
     }
   }
-}
 
-@media screen and (min-width: 1200px) {
-  @supports (display: grid) {
+  @media screen and (min-width: 1200px) {
     .site {
       display: grid;
+      // grid-gap: 1em;
       grid-template-columns: 1fr 2fr 1fr 1fr;
       grid-template-rows: auto 1fr;
       grid-template-areas:
         "header header header header"
-        "peace content sidebar peace"
+        ". content sidebar ."
         "footer footer footer footer";
     }
-    header {
-      grid-area: header;
-    }
-    main {
-      grid-area: content;
-    }
-    aside.sidebar {
-      grid-area: sidebar;
-    }
-    footer {
-      grid-area: footer;
-    }
+  }
+
+  header {
+    grid-area: header;
+  }
+  main {
+    grid-area: content;
+  }
+  aside.sidebar {
+    grid-area: sidebar;
+  }
+  footer {
+    grid-area: footer;
   }
 }
