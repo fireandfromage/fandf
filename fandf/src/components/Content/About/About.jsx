@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import chefDegen from "../../../assets/images/chef_degen.jpg";
 
 export default class About extends Component {
   render() {
@@ -6,13 +7,13 @@ export default class About extends Component {
       <section id="about">
         <h1>The King Of Cheese</h1>
 
+        <img src={chefDegen} />
+
         <p>
           Chef Degen Reinhardt Storrer started Fire and Fromage in 2018. His
           vision is to build his career entirely focused on the lovely
           sectionerse product known as cheese.
         </p>
-
-        <img src="" />
 
         <p>
           After finishing culinary school in 2015, Chef Degen was left with a

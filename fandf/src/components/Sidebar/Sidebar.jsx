@@ -7,7 +7,7 @@ export default class Sidebar extends Component {
       <aside className="sidebar">
         <form
           method="POST"
-          action="https://formspree.io/seanrichardparker@gmail.com"
+          action="https://formspree.io/fireandfromage@gmail.com"
           target="_blank"
           rel="nofollow noopener"
         >

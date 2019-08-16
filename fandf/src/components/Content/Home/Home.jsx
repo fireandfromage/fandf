@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+import raclette from "../../../assets/images/pewter_with_board.jpg";
 
 export default class Home extends Component {
   render() {
     return (
       <section id="home">
         <h1>Raclette, The Swiss Tradition</h1>
+        <img src={raclette} />
         <p>
           Raclette is a traditional dish of cheese melted on the wheel or block,
           that is then scraped over bread, potatoes and pickles.

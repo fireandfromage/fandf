@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import foodBooth from "../../../assets/images/booth.jpg";
 
 export default class FoodBooth extends Component {
   render() {
@@ -6,16 +7,14 @@ export default class FoodBooth extends Component {
       <section id="booth">
         <h1>Raclette Cheese Provo, UT</h1>
 
+        <img src={foodBooth} />
         <p>
           As part of our mission to spread the enjoyment of Raclette to Utah
-          Valley we have set up a booth at the Provo Farmers Market. Every
-          Saturday starting the first weekend of June to the last weekend of
-          October from 9 AM to 2 PM.
+          Valley we have set up a booth at the Provo Farmers Market. Every Saturday starting the first weekend of June to the last weekend of October from 9 AM to 2 PM.
         </p>
 
         <p>
-          Follow us on Facebook, Twitter and Instagram to see where we will be
-          next!
+          Follow us on <a href="https://www.facebook.com/fireandfromage/" target="_blank" rel="noopener nofollow">Facebook</a> to see where we will be next!
         </p>
 
         <p>Our Menu Includes:</p>
