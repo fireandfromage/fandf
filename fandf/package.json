@@ -2,7 +2,7 @@
   "name": "fandf",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://fireandfromage.github.io/fireandfromage",
+  "homepage": "http://fireandfromage.github.io",
   "dependencies": {
     "node-sass-chokidar": "^1.3.4",
     "react": "^16.6.0",
