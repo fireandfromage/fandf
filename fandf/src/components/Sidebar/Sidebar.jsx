@@ -9,7 +9,7 @@ export default class Sidebar extends Component {
           method="POST"
           action="https://formspree.io/fireandfromage@gmail.com"
           target="_blank"
-          rel="nofollow noopener"
+          rel="nofollow noreferrer noopener"
         >
           <h4>Contact Us</h4>
           <input type="text" name="name" placeholder="Name" />

@@ -6,7 +6,7 @@ export default class Home extends Component {
     return (
       <section id="home">
         <h1>Raclette, The Swiss Tradition</h1>
-        <img src={raclette} />
+        <img alt="pewter plate on a on a wooden cutting board with proscuitto, potatoes, pickles and melted cheese on them" src={raclette} />
         <p>
           Raclette is a traditional dish of cheese melted on the wheel or block,
           that is then scraped over bread, potatoes and pickles.

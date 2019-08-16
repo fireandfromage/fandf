@@ -7,7 +7,7 @@ export default class About extends Component {
       <section id="about">
         <h1>The King Of Cheese</h1>
 
-        <img src={chefDegen} />
+        <img alt="chef Degen preparing Raclette in Provo Farmer's market" src={chefDegen} />
 
         <p>
           Chef Degen Reinhardt Storrer started Fire and Fromage in 2018. His

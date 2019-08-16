@@ -6,7 +6,7 @@ export default class Catering extends Component {
     return (
       <section id="catering">
         <h1>Raclette Caterer in Provo, UT.</h1>
-        <img src={alpsHorn} />
+        <img alt="alpenhorn sandwich" src={alpsHorn} />
         <p>
           The main focus of Fire and Fromage is to provide an excellent culinary
           experience without sacrificing tradition.
