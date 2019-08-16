@@ -87,29 +87,19 @@ export default class Nav extends Component {
           <nav>
             <ul>
               <li>
-                <Link onClick={() => closeMenu()} to="/">
-                  Home
-                </Link>
+                <a href="#">Home</a>
               </li>
               <li>
-                <Link onClick={() => closeMenu()} to="/about">
-                  About Us
-                </Link>
+                <a href="#about">About Us</a>
               </li>
               <li>
-                <Link onClick={() => closeMenu()} to="/catering">
-                  Catering
-                </Link>
+                <a href="/#catering">Catering</a>
               </li>
               <li>
-                <Link onClick={() => closeMenu()} to="/booth">
-                  Food Booth
-                </Link>
+                <a href="#booth">Food Booth</a>
               </li>
               <li>
-                <Link onClick={() => closeMenu()} to="/contact">
-                  Contact Us
-                </Link>
+                <a href="#contact">Contact Us</a>
               </li>
             </ul>
           </nav>

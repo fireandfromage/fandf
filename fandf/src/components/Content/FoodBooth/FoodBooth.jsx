@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class FoodBooth extends Component {
   render() {
     return (
-      <div id="booth">
+      <section id="booth">
         <h1>Raclette Cheese Provo, UT</h1>
 
         <p>
@@ -34,7 +34,7 @@ export default class FoodBooth extends Component {
           Toasted Brioche, Bourbon Bacon Marmalade and Raclette. + Side of
           Truffle Chips.
         </ul>
-      </div>
+      </section>
     );
   }
 }

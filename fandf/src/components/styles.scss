@@ -10,6 +10,10 @@ html {
 
 header {
   font-family: "Playfair Display", serif;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: white;
 }
 
 body {
@@ -37,11 +41,7 @@ p {
 .content,
 .sidebar {
   flex: 1 0 auto;
-  padding: 20px;
-}
-
-.footer {
-  flex-shrink: 0;
+  padding: 2rem 0.7rem 2rem;
 }
 
 /*-----------------------------------------
@@ -69,17 +69,31 @@ Wider screens and the browser supports it
       "content"
       "sidebar"
       "footer";
+    section {
+      padding: 4rem 2.8rem 4.5rem 0;
+      min-height: 20vh;
+    }
+    #contact {
+      padding: 5rem 2.8rem 0.5rem 0;
+    }
+    .sidebar {
+      padding-bottom: 6rem;
+    }
   }
 
   @media screen and (min-width: 800px) {
     .site {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto 1fr;
       grid-template-areas:
-        "header header"
-        "content sidebar"
-        "footer footer";
+        "header header header"
+        "content content sidebar"
+        "footer footer footer";
+    }
+    section {
+      padding-top: 3rem;
+      min-height: 100vh !important;
     }
   }
 
@@ -104,8 +118,5 @@ Wider screens and the browser supports it
   }
   aside.sidebar {
     grid-area: sidebar;
-  }
-  footer {
-    grid-area: footer;
   }
 }

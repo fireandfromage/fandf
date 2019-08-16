@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class About extends Component {
   render() {
     return (
-      <div id="about">
+      <section id="about">
         <h1>The King Of Cheese</h1>
 
         <p>
@@ -11,6 +11,8 @@ export default class About extends Component {
           vision is to build his career entirely focused on the lovely
           sectionerse product known as cheese.
         </p>
+
+        <img src="" />
 
         <p>
           After finishing culinary school in 2015, Chef Degen was left with a
@@ -39,7 +41,7 @@ export default class About extends Component {
           Raclette being the king of all cheese dishes, seemed to be a natural
           choice!
         </p>
-      </div>
+      </section>
     );
   }
 }

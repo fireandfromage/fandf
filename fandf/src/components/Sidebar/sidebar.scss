@@ -1,0 +1,49 @@
+form {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-flow: column;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 6rem;
+  h4 {
+    margin-bottom: 1rem;
+  }
+}
+input,
+textarea {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  color: #666260;
+  border: 1px solid #c4beb9;
+  background: #fff;
+  padding: 1em;
+  transition: all 0.3s ease-in-out;
+  margin: 0.25rem 0;
+  width: 85%;
+}
+textarea {
+  height: 6rem;
+}
+button,
+a.button {
+  font-size: 0.707em;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background-color: #103742;
+  color: #f2f2ee;
+  padding: 1em 1.414em 1em;
+  width: 10rem;
+  margin: 0.5rem 0;
+}
+button:hover {
+  background: dodgerblue;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
