@@ -27,7 +27,7 @@ export default class Catering extends Component {
           you would like for a catered event.
         </p>
         <br />
-        <p>Call us today for your custom quote!</p>
+        <p>Contact us today for your custom quote!</p>
       </section>
     );
   }

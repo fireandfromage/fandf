@@ -27,7 +27,7 @@ export default class Home extends Component {
           adding our own new twists.
         </p>
 
-        <p>Give us a call to set up your event today!</p>
+        <p>Contact us to set up your event today!</p>
       </section>
     );
   }
