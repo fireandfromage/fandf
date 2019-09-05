@@ -1,8 +1,8 @@
 {
-  "name": "kingofcheese",
+  "name": "fireandfromage.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fireandfromage.github.io/kingofcheese",
+  "homepage": "https://fireandfromage.github.io",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "node-sass-chokidar": "^1.3.4",
